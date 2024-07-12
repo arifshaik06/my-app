@@ -1,0 +1,61 @@
+.parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.child {
+    width: 30%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.child label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.child input[type="number"] {
+    width: 40%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.child button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    
+}
+
+.child button:disabled{
+    opacity: 0.5;
+}
+
+
+.child button:hover {
+    background-color: #0056b3;
+}
+
+.child h4 {
+    margin-top: 20px;
+    color: #333;
+}
+.child h1{
+    text-transform: uppercase   ;
+}
+

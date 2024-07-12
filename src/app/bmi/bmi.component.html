@@ -1,0 +1,31 @@
+<div class="parent">
+    <div class="child">
+        <div class="child_top">
+            <h1>body mass index (BMI) calculator</h1>
+        </div>
+        <div class="child_bottom">
+            <div class="left">
+                <div>
+                    <label for="">height:</label>
+                    <input type="number" id="height" placeholder="in Cm" [(ngModel)]="height">
+                </div>
+                <div>
+                    <label for="">weight:</label>
+                    <input type="number" id="weight" placeholder="in Kg" [(ngModel)]="weight">
+                </div>
+
+                <button [disabled]="!height || !weight" (click)="calculate()">calculate</button>
+
+                <h3>your BMI is{{result}}</h3>
+            </div>
+            <div class="right">
+                <div class="right_top">
+                    <h3 >you need to xxxx atleast xxkgs to be in normal range</h3>
+                </div>
+                <div class="right_bottom">
+                    <img src="/assets/body.webp" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

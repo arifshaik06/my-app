@@ -1,0 +1,40 @@
+.parent{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+.left{
+    width: 20%;
+    height: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    overflow: auto;
+    
+}
+
+.left>h1,h2{
+    text-transform: capitalize;
+    padding: 5px;
+    cursor: pointer;
+    font-weight: 600;
+}
+.left>h2:hover{
+    background-color:gray;
+}
+.right{
+    width: 80%;
+    height: 100%;
+    background-color: teal;
+    overflow: auto;
+}
+
+button{
+    text-transform: uppercase;
+    padding: 10px;
+    background-color: red;
+    border-radius: 10px;
+    color: white;
+    width: 100px;
+    cursor: pointer;
+}

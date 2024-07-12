@@ -1,0 +1,12 @@
+<div class="parent">
+    <div class="child"> 
+        <h1>circle</h1>
+        <label for="">radius:</label>
+        <input type="number" [(ngModel)]="radius">
+        <br>
+        <button [disabled]="!radius" (click)="area()">area</button>
+        <button [disabled]="!radius" (click)="permiter()">perimeter</button>
+        <br>
+        <h4> result is{{result}}</h4>
+    </div>
+</div>
