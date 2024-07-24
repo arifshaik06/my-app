@@ -1,0 +1,31 @@
+
+.parent{
+    width: 100vw;
+    height: 100vh;
+    display: flex ; 
+    flex-wrap: wrap;
+}
+   
+.left{
+    height: 100%;
+    width: 15%;
+    text-transform: capitalize;
+    background-color: antiquewhite;
+    
+}
+.left>h1{
+    text-align: center;
+}
+.right{
+    height: 100%;
+    width: 85%;
+    
+} 
+.righttop{
+  padding: 10px;
+  text-transform: capitalize;
+  font-size: large;
+  display: flex;
+  justify-content: end;
+  align-items: end; 
+} 

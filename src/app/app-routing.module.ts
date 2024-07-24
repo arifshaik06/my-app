@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { createComponent, createPlatformFactory, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
@@ -16,6 +16,17 @@ import { PipesComponent } from './pipes/pipes.component';
 import { EmployeesComponent } from './employees/employees.component';
 import { EventRegistrationComponent } from './event-registration/event-registration.component';
 import { CartComponent } from './cart/cart.component';
+import { FlipkarComponent } from './flipkar/flipkar.component';
+import { DataofempComponent } from './dataofemp/dataofemp.component';
+import { VehicleComponent } from './vehicle/vehicle.component';
+import { BankaccountsComponent } from './bankaccounts/bankaccounts.component';
+import { MyntraComponent } from './myntra/myntra.component';
+import { MailsComponent } from './mails/mails.component';
+import { MemeComponent } from './meme/meme.component';
+import { CreateVehicleComponent } from './create-vehicle/create-vehicle.component';
+
+
+
 
 const routes: Routes = [
   {path:"login",component:LoginComponent},
@@ -32,7 +43,17 @@ const routes: Routes = [
     {path:"pipes",component:PipesComponent},
     {path:"employees",component:EmployeesComponent},
     {path:"event",component:EventRegistrationComponent},
-    {path:"cart",component:CartComponent}
+    {path:"cart",component:CartComponent},
+    {path:"flipkart",component:FlipkarComponent},
+    {path:"dataofemp",component:DataofempComponent},
+    {path:"vehicle",component:VehicleComponent},
+    {path:"bankaccounts",component:BankaccountsComponent},
+    {path:"myntra",component:MyntraComponent},
+    {path:"mails",component:MailsComponent},
+    {path:"meme", component:MemeComponent},
+    {path:"create-vehicle",component:CreateVehicleComponent},
+    
+  
   ]},
   {path:"",component:LoginComponent},
   {path:"**",component:PagenotfoundComponent}

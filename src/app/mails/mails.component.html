@@ -1,0 +1,5 @@
+<h4>Mails</h4>
+<tr *ngFor="let mail of mails" class="first" [ngClass]="{'low':mail.complted==true}">
+    <td>{{mail.id}}</td>
+    <td>{{mail.title}}</td>
+</tr>

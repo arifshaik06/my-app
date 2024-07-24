@@ -1,0 +1,9 @@
+
+label{
+    width: 100px;
+    display: inline-block;
+    margin: 10px;
+}
+form{
+    text-transform: capitalize;
+}

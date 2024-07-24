@@ -1,0 +1,51 @@
+<input type="text" [(ngModel)]="term" (keyup)="filter()" placeholder="search"> 
+
+   <label for="">column</label>
+   <select name="" id="" [(ngModel)]="column">
+    <option value="city">city</option>
+    <option value="account_name">account_name</option>
+   </select>
+
+   <label for="">order</label>
+   <select name="" id="" [(ngModel)]="order">
+    <option value="asc">ascending</option>
+    <option value="desc">descending</option>
+   </select>
+   <button (click)="sort()">sort</button>
+
+   <label for="">limit</label>
+   <select name="" id="" [(ngModel)]="limit">
+    <option>10</option>
+    <option>20</option>
+   </select>
+   <label for="">page</label>
+   <select name="" id="" [(ngModel)]="page">
+    <option>1</option>
+    <option>2</option>
+   </select>
+   <button (click)="search()">search</button>
+<table>
+   
+    <thead>
+        <tr>
+            <th>account_name</th>
+            <th>available_balance</th>
+            <th>account_number</th>
+            <th>city</th>
+            <th>profie_picture</th>
+            <th>id</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let bankaccount of bankaccounts">
+            <td>{{bankaccount.account_name}}</td>
+            <td>{{bankaccount.available_balance}}</td>
+            <td>{{bankaccount.account_number}}</td>
+            <td>{{bankaccount.city}}</td>
+            <td>
+                <img src="{{bankaccount.profie_picture}}" alt="" width="100px">
+            </td>
+            <td>{{bankaccount.id}}</td>
+        </tr>
+    </tbody>
+</table>

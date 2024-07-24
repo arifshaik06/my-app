@@ -1,0 +1,57 @@
+<div class="parent">
+    <div class="left">
+        <h1>filters</h1>
+        <div>
+            <h3>category</h3>
+            <input type="checkbox" id="tshirts">
+            <label for="tshirts">men's clothing</label>
+            <br>
+            <input type="checkbox" id="loungetshirts">
+            <label for="loungetshirts">jewellery</label>
+            <br>
+            <input type="checkbox" id="electronics">
+            <label for="electronics">electronics</label>
+            <br>
+            <input type="checkbox" id="women's clothing">
+            <label for="women's clothing">women's clothing</label>
+            <br>
+        </div>
+
+        <div>
+            <h3>price</h3>
+            <input type="checkbox" id="119">
+            <label for="119">rs. 7 to rs.50</label>
+            <br>
+            <input type="checkbox" id="13840">
+            <label for="13840">rs.50 to rs.300</label>
+            <br>
+            <input type="checkbox" id="27561">
+            <label for="27561">rs.300 to rs.600 </label>
+            <br>
+            <input type="checkbox" id="41282">
+            <label for="41282">rs.600 to rs.1000</label>
+        </div>
+    </div>
+    <div class="right">
+        <div class="righttop">
+            <label class="select" for="">price range:</label>
+            <select name="" id="">
+                <option value="">all</option>
+                <option value="">low to high</option>
+                <option value="">high to low</option>
+            </select>
+            
+        </div>
+        <div class="rightbottom" *ngFor="let product of products">
+            <div class="card image">
+                <img src="{{product.image}}" alt="" width="200px" height="200px">
+                <button>{{product.rating.rate}} &#9733; | {{product.rating.count}}</button>
+            </div>
+            <p>{{product.title}}</p>
+            <p><strong>rs.{{product.price}}</strong></p>
+            <title>{{product.description}}</title>
+            <h4>{{product.category}}</h4>
+        </div>
+    </div>
+
+</div>

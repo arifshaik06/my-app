@@ -1,0 +1,81 @@
+.parent {
+    width: 100%;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    text-transform: capitalize;
+}
+
+.top, .bottom {
+    width: 100%;
+    margin-bottom: 20px;
+
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+    text-transform: capitalize;
+}
+
+form {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+form div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+   
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="date"],
+form textarea {
+    width: calc(30% - 20px);
+    padding: 8px 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form input[type="radio"] {
+    margin-right: 5px;
+}
+
+form button {
+    padding: 10px 20px;
+    margin: 10px 5px 0 0;
+    border: none;
+    background: #28a745;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    
+}
+button{
+    text-transform: capitalize;
+   background-color: #dc3545; 
+   color: aliceblue;
+   padding: 10px;
+   border-radius: 10px;
+}
+form button[type="reset"] {
+    background: #dc3545;
+}
+
+form button:hover {
+    opacity: 0.9;
+}
+
+.table-container {
+    overflow-x: auto;
+}
