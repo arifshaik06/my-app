@@ -1,0 +1,17 @@
+<div class="parent">
+    <div class="card" *ngFor="let student of students">
+        <div class="top">
+            <img src="school-logo" alt="" height="100%" width="100%">
+            <h1>school-name</h1>
+            <h6>school-city</h6>
+            <h6>school-pin</h6>
+        </div>
+        <div class="bottom">
+            <h6>name:{{student.name}}</h6>
+            <h6>phone:{{student.phone}}</h6>
+            <h6>city:{{student.city}}</h6>
+            <h6>dob:{{student.dob}} | date:"dd-MM-yyyy"</h6>
+           <h6>email:{{student.email}}</h6>
+        </div>
+    </div>
+  </div>      

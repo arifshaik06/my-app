@@ -24,6 +24,9 @@ import { MyntraComponent } from './myntra/myntra.component';
 import { MailsComponent } from './mails/mails.component';
 import { MemeComponent } from './meme/meme.component';
 import { CreateVehicleComponent } from './create-vehicle/create-vehicle.component';
+import { CreateBankComponent } from './create-bank/create-bank.component';
+import { StudentsComponent } from './students/students.component';
+import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
 
 
 
@@ -52,6 +55,9 @@ const routes: Routes = [
     {path:"mails",component:MailsComponent},
     {path:"meme", component:MemeComponent},
     {path:"create-vehicle",component:CreateVehicleComponent},
+    {path:"create-bank", component:CreateBankComponent},
+    {path:"students",component:StudentsComponent},
+    {path:"vehicle-details/:id",component:VehicleDetailsComponent}
     
   
   ]},

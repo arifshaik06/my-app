@@ -1,8 +1,12 @@
 .red-button{
    background-color: red;
-   font-size: 20px;
+  
    border: 0;
    text-transform: capitalize;
    color: white;
    cursor: pointer;
+}
+
+button{
+   cursor: pointer; 
 }

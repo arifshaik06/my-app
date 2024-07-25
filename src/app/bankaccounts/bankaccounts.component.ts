@@ -63,5 +63,18 @@ export class BankaccountsComponent implements OnInit {
       }
     )
   }
-}
+  delete(id:string){
+    this._bankaccountsService.deletebankaccount(id).subscribe (
+      (data:any)=>{
+        alert("deleted succesfully!!!!!!");
+        location.reload();
+      },
+      (err:any)=>{
+        alert("deleted fails");
+      }
+      
+    
+    )
+  }
 
+}

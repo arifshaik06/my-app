@@ -1,0 +1,29 @@
+<form [formGroup]="accountform">
+    <h1>cretae account</h1>
+
+    <label for="">accountname:</label>
+    <input type="text" formControlName="accountname">
+    <br>
+
+    <label for="">accountbalance:</label>
+    <input type="text" formControlName="accountbalance">
+    <br>
+
+    <label for="">accountnumber:</label>
+    <input type="text" formControlName="accountnumber">
+    <br>
+
+
+    
+    <label for="">city:</label>
+    <input type="text" formControlName="city">
+    <br>
+
+    
+    <label for="">profile:</label>
+    <input type="text" formControlName="profile">
+    <br>
+
+    <button (click)="submit()">submit</button>
+
+</form>

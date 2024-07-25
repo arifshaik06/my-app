@@ -34,6 +34,7 @@
             <th>city</th>
             <th>profie_picture</th>
             <th>id</th>
+            <th>action</th>
         </tr>
     </thead>
     <tbody>
@@ -46,6 +47,9 @@
                 <img src="{{bankaccount.profie_picture}}" alt="" width="100px">
             </td>
             <td>{{bankaccount.id}}</td>
+           <td>
+            <button  (click)="delete(bankaccount.id)">delete</button>
+           </td>
         </tr>
     </tbody>
 </table>
