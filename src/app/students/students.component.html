@@ -1,17 +1,36 @@
 <div class="parent">
-    <div class="card" *ngFor="let student of students">
-        <div class="top">
-            <img src="school-logo" alt="" height="100%" width="100%">
-            <h1>school-name</h1>
-            <h6>school-city</h6>
-            <h6>school-pin</h6>
-        </div>
-        <div class="bottom">
-            <h6>name:{{student.name}}</h6>
-            <h6>phone:{{student.phone}}</h6>
-            <h6>city:{{student.city}}</h6>
-            <h6>dob:{{student.dob}} | date:"dd-MM-yyyy"</h6>
-           <h6>email:{{student.email}}</h6>
+    <div class="input toptop">
+        <input type="text" placeholder="search student" [(ngModel)]="term" (keyup)="filter()">
+    </div>
+    <div class="botbot">
+        <div class="card" *ngFor="let student of students">
+            <div class="top">
+                <div class="school_logo">
+                    <img src="{{student.school_logo}}" alt="" width="100px" height="100px">
+                </div>
+                <div class="schooldetails">
+                    <h1>{{student.school_name}}</h1>
+                    <h4>{{student.school_city}}</h4>
+                    <h4>{{student.school_pin}}</h4>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="studentimg">
+                    <img src="{{student.profile_picture}}" alt="" width="150px" height="150px">
+                </div>
+                <div class="studentdetails">
+                    <h4>name:{{student.name}}</h4>
+                    <h4>phone:{{student.phone}}</h4>
+                    <h4>city:{{student.city}}</h4>
+                    <h4>dob:{{student.dob | date: "dd-MM-yyyy"}}</h4>
+                    <h4>email:{{student.email}}</h4>
+                </div>
+                <div class="footer">
+                    <button (click)="delete(student.id)">delete</button>
+                    <button routerLink="/dashboard/studentinfo/{{student.id}}">view</button>
+                    <button routerLink="/dashboard/edit-student/{{student.id}}">edit</button>
+                </div>
+            </div>
         </div>
     </div>
-  </div>      
+</div>

@@ -1,0 +1,26 @@
+<div class="parent">
+    <div class="card" >
+        <div class="top">
+            <div class="school_logo">
+                <img src="{{student.school_logo}}" alt="" width="100px" height="100px">
+            </div>
+            <div class="schooldetails">
+                <h1>{{student.school_name}}</h1>
+                <h4>{{student.school_city}}</h4>
+                <h4>{{student.school_pin}}</h4>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="studentimg">
+                <img src="{{student.profile_picture}}" alt="" width="150px" height="150px">
+            </div>
+            <div class="studentdetails">
+                <h4>name:{{student.name}}</h4>
+                <h4>phone:{{student.phone}}</h4>
+                <h4>city:{{student.city}}</h4>
+                <h4>dob:{{student.dob | date: "yy-MM-dd"}}</h4>
+                <h4>email:{{student.email}}</h4>
+            </div>
+        </div>
+    </div>
+</div>

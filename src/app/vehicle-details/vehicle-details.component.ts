@@ -29,7 +29,7 @@ export class VehicleDetailsComponent implements OnInit {
     )
    }
 
-  ngOnInit(): void {
+  ngOnInit(): void {''
   }
 
 }

@@ -27,13 +27,18 @@ import { CreateVehicleComponent } from './create-vehicle/create-vehicle.componen
 import { CreateBankComponent } from './create-bank/create-bank.component';
 import { StudentsComponent } from './students/students.component';
 import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
+import { StudentDetailsComponent } from './student-details/student-details.component';
+import { StudentsinfoComponent } from './studentsinfo/studentsinfo.component';
+import { BankDetailsComponent } from './bank-details/bank-details.component';
+import { AuthenticationGuard } from './authentication.guard';
+import { UserComponent } from './user/user.component';
 
 
 
 
 const routes: Routes = [
   {path:"login",component:LoginComponent},
-  {path:"dashboard",component:DashboardComponent, children:[
+  {path:"dashboard", canActivate:[AuthenticationGuard],component:DashboardComponent, children:[
     {path:"welcome", component:WelcomeComponent},
     {path:"home",component:HomeComponent},
     {path:"data-binding",component:DataBindingComponent},
@@ -57,9 +62,14 @@ const routes: Routes = [
     {path:"create-vehicle",component:CreateVehicleComponent},
     {path:"create-bank", component:CreateBankComponent},
     {path:"students",component:StudentsComponent},
-    {path:"vehicle-details/:id",component:VehicleDetailsComponent}
-    
-  
+    {path:"vehicle-details/:id",component:VehicleDetailsComponent},
+    {path:"edit-vehicle/:id",component:CreateVehicleComponent},
+    {path:"student-details",component:StudentDetailsComponent},
+    {path:"studentinfo/:id",component:StudentsinfoComponent},
+    {path:"edit-student/:id",component:StudentDetailsComponent},
+    {path:"bank-details/:id",component:BankDetailsComponent},
+    {path:"edit-bankaccount/:id",component:CreateBankComponent},
+    {path:"user",component:UserComponent}
   ]},
   {path:"",component:LoginComponent},
   {path:"**",component:PagenotfoundComponent}

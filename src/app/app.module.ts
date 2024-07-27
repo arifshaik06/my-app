@@ -32,6 +32,10 @@ import { CreateVehicleComponent } from './create-vehicle/create-vehicle.componen
 import { CreateBankComponent } from './create-bank/create-bank.component';
 import { StudentsComponent } from './students/students.component';
 import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
+import { StudentDetailsComponent } from './student-details/student-details.component';
+import { StudentsinfoComponent } from './studentsinfo/studentsinfo.component';
+import { BankDetailsComponent } from './bank-details/bank-details.component';
+import { UserComponent } from './user/user.component';
 
 
 
@@ -66,6 +70,10 @@ import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.compo
     CreateBankComponent,
     StudentsComponent,
     VehicleDetailsComponent,
+    StudentDetailsComponent,
+    StudentsinfoComponent,
+    BankDetailsComponent,
+    UserComponent,
   
   
    

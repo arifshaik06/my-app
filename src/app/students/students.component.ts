@@ -10,6 +10,7 @@ export class StudentsComponent implements OnInit {
 
   public students : any =[];
   public term:string = "";
+  public id:string ="";
  
 
 
@@ -31,7 +32,7 @@ export class StudentsComponent implements OnInit {
   }
 
  filter(){
-  this._studentsService.getfilteredvehicles(this.term).subscribe(
+  this._studentsService.getfilteredstudentsdetails(this.term).subscribe(
     (data:any)=>{
      this.students = data ;
     },

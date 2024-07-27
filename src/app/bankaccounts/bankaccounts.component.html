@@ -49,6 +49,9 @@
             <td>{{bankaccount.id}}</td>
            <td>
             <button  (click)="delete(bankaccount.id)">delete</button>
+            <button routerLink="/dashboard/bank-details/{{bankaccount.id}}">view</button>
+            <button routerLink="/dashboard/edit-bankaccount/{{bankaccount.id}}">edit</button>
+
            </td>
         </tr>
     </tbody>

@@ -1,0 +1,138 @@
+
+ body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 20px;
+}
+
+
+.toptop{
+    margin-top: 10px;
+}
+.botbot{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    text-transform: capitalize;
+}
+
+.input {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
+    margin-left: 280px;
+ } 
+
+.input input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #007bff;
+    color: white;
+}
+
+.school_logo img {
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.schooldetails h1 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.schooldetails h4 {
+    margin: 5px 0 0 0;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.bottom {
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.studentimg img {
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.studentdetails h4 {
+    margin: 5px 0;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.studentdetails h4 span {
+    font-weight: bold;
+}
+
+.footer button {
+    padding: 10px 20px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    text-transform: capitalize;
+    
+}
+
+.footer button:hover {
+    background-color: #ff1a1a;
+}
+
+@media (max-width: 768px) {
+    .parent {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .input {
+        width: 100%;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .top, .bottom {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .school_logo img, .studentimg img {
+        margin: 0 0 20px 0;
+    }
+}
+
+
