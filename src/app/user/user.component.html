@@ -27,5 +27,23 @@
         <input type="number" formControlName="pincode">
         <br>
     </div>
+
+    <label for="">type:</label>
+    <input type="radio" name="type" formControlName="type" value="dayscholar">
+    <label for="">dayscholar</label>
+    <input type="radio" name="type" formControlName="type" value="residental">
+    <label for="">residental</label>
+    <br>
+    <div *ngIf="userform.get('type')?.value =='dayscholar'">
+        <label for="">bus fee:</label>
+        <input type="number" formControlName="busfee">
+        <br>
+    </div>
+
+    <div *ngIf="userform.get('type')?.value =='residental'">
+        <label for="">hostel fee:</label>
+        <input type="number" formControlName="hostelfee">
+        <br>
+    </div>
     <button (click)="submit()">submit</button>
 </form>
