@@ -10,3 +10,8 @@ form{
 h1{
     text-transform: capitalize;
 }
+.error{
+    color: red;
+    margin: 0;
+    margin-left: 120px;
+}

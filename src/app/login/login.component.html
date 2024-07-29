@@ -10,6 +10,10 @@
             <div>
                 <label for="">password:</label>
                 <input type="text" placeholder="password" formControlName="password">
+                <div *ngIf="loginform.get('password')?.touched && loginform.get('password')?.invalid">
+                    <p class="error" *ngIf="loginform.get('password')?.errors?.['pattern']">password sholud contain small&capital letter and capich words</p>
+
+                </div>
             </div>
             <button (click)="login()">login</button>
         </form>

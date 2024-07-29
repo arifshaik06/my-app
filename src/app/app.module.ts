@@ -36,6 +36,7 @@ import { StudentDetailsComponent } from './student-details/student-details.compo
 import { StudentsinfoComponent } from './studentsinfo/studentsinfo.component';
 import { BankDetailsComponent } from './bank-details/bank-details.component';
 import { UserComponent } from './user/user.component';
+import { CapitalDirective } from './capital.directive';
 
 
 
@@ -74,6 +75,7 @@ import { UserComponent } from './user/user.component';
     StudentsinfoComponent,
     BankDetailsComponent,
     UserComponent,
+    CapitalDirective,
   
   
    

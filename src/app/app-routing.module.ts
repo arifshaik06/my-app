@@ -32,6 +32,7 @@ import { StudentsinfoComponent } from './studentsinfo/studentsinfo.component';
 import { BankDetailsComponent } from './bank-details/bank-details.component';
 import { AuthenticationGuard } from './authentication.guard';
 import { UserComponent } from './user/user.component';
+import { NotifyGuard } from './notify.guard';
 
 
 
@@ -69,7 +70,7 @@ const routes: Routes = [
     {path:"edit-student/:id",component:StudentDetailsComponent},
     {path:"bank-details/:id",component:BankDetailsComponent},
     {path:"edit-bankaccount/:id",component:CreateBankComponent},
-    {path:"user",component:UserComponent}
+    {path:"user",canDeactivate:[NotifyGuard], component:UserComponent}
   ]},
   {path:"",component:LoginComponent},
   {path:"**",component:PagenotfoundComponent}
