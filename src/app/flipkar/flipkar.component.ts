@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { __values } from 'tslib';
 
 @Component({
   selector: 'app-flipkar',
@@ -82,5 +83,6 @@ addtoCart() {
  this.products.push({...this.newitem});
 this.newitem={productname:'',price:0,rating:0,freedelivery:false};
 }
+
 
 }

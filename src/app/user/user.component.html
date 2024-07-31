@@ -4,7 +4,7 @@
 <form [formGroup]="userform">
 
     <label for="">name:</label>
-    <input type="text" formControlName="name" appCapital>
+    <input type="text" formControlName="name"appCapital>
     <div *ngIf="userform.get('name')?.touched && userform.get('name')?.invalid">
         <p class="error" *ngIf="userform.get('name')?.errors?.['required']">name is required.</p>
         <p class="error" *ngIf="userform.get('name')?.errors?.['minlength']">name should contain minimum 3 charcters.</p>
@@ -94,7 +94,7 @@
 
     <div formArrayName="cards">
         <div *ngFor="let card of cardsFormArray.controls;let i=index">
-            <div formControlName="{{i}}">
+            <div formGroupName="{{i}}">
                 <h3>Card {{i+1}}</h3>
 
                 <label for="">Number:</label>

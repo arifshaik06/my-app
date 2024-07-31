@@ -18,7 +18,7 @@
                     <button (click)="delivery()">price with delivery charges</button>
                 </div>
                 <div class="l4">
-                    <button (click)="totalPrice()">total price</button>
+                    <button (click)="totalPrice()">total price </button>
                     <button (click)=" totalCart()">total cart items</button>
                 </div>
             </div>
@@ -70,8 +70,11 @@
                 <tr *ngFor="let product of products;let i=index">
                     <td>{{i+1}}</td>
                     <td>{{product.productname}}</td>
-                    <td>{{product.price}}</td>
-                    <td>{{product.rating}}</td>
+                    <td>{{product.price | price}}</td>
+                    <td>
+                        {{product.rating}}
+                        <app-rating [rating]="product.rating"></app-rating>
+                    </td>
                     <td>{{product.freedelivery}}</td>
                     <td>
                         <button (click)="delete(i)">delete</button>
