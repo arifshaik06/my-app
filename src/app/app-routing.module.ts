@@ -33,6 +33,10 @@ import { BankDetailsComponent } from './bank-details/bank-details.component';
 import { AuthenticationGuard } from './authentication.guard';
 import { UserComponent } from './user/user.component';
 import { NotifyGuard } from './notify.guard';
+import { CreateCompanyComponent } from './create-company/create-company.component';
+import { ParentComponent } from './parent/parent.component';
+import { Calculator2Component } from './calculator2/calculator2.component';
+import { RatingComponent } from './rating/rating.component';
 
 
 
@@ -70,7 +74,11 @@ const routes: Routes = [
     {path:"edit-student/:id",component:StudentDetailsComponent},
     {path:"bank-details/:id",component:BankDetailsComponent},
     {path:"edit-bankaccount/:id",component:CreateBankComponent},
-    {path:"user",canDeactivate:[NotifyGuard], component:UserComponent}
+    {path:"user",canDeactivate:[NotifyGuard], component:UserComponent},
+    {path:"create-company",canDeactivate:[NotifyGuard],component:CreateCompanyComponent},
+    {path:"parent",component:ParentComponent},
+    {path:"calculator2",component:Calculator2Component},
+    {path:"rating",component:RatingComponent}
   ]},
   {path:"",component:LoginComponent},
   {path:"**",component:PagenotfoundComponent}
