@@ -37,6 +37,7 @@ import { CreateCompanyComponent } from './create-company/create-company.componen
 import { ParentComponent } from './parent/parent.component';
 import { Calculator2Component } from './calculator2/calculator2.component';
 import { RatingComponent } from './rating/rating.component';
+import { AboutCompanyComponent } from './about-us/about-company/about-company.component';
 
 
 
@@ -78,7 +79,8 @@ const routes: Routes = [
     {path:"create-company",canDeactivate:[NotifyGuard],component:CreateCompanyComponent},
     {path:"parent",component:ParentComponent},
     {path:"calculator2",component:Calculator2Component},
-    {path:"rating",component:RatingComponent}
+    {path:"rating",component:RatingComponent},
+    {path:"about-company",component:AboutCompanyComponent}
   ]},
   {path:"",component:LoginComponent},
   {path:"**",component:PagenotfoundComponent}
