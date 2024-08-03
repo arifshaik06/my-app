@@ -1,5 +1,5 @@
 import { createComponent, createPlatformFactory, NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
@@ -38,6 +38,7 @@ import { ParentComponent } from './parent/parent.component';
 import { Calculator2Component } from './calculator2/calculator2.component';
 import { RatingComponent } from './rating/rating.component';
 import { AboutCompanyComponent } from './about-us/about-company/about-company.component';
+import { SiblingCommunicationComponent } from './sibling-communication/sibling-communication.component';
 
 
 
@@ -83,17 +84,19 @@ const routes: Routes = [
     {path:"about-company",component:AboutCompanyComponent},
     // {path:"payments",import payments module},// Lazy component module Loading
     {path:"one-person-change"},
+    // {path:"one-person-change"},
     {
       path: 'payments',
       loadChildren: () => import('./payments/payments.module').then(m => m.PaymentsModule)
-    }
+    },
+    {path:"sibling-communication",component:SiblingCommunicationComponent}
   ]},
   {path:"",component:LoginComponent},
   {path:"**",component:PagenotfoundComponent}
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes,{preloadingStrategy:PreloadAllModules})],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

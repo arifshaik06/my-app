@@ -1,0 +1,14 @@
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.s{
+    background-color: blue;
+    color: white;
+    margin-top: 50px;
+    text-transform: capitalize;
+    border-radius: 5px;
+    padding: 8px;
+    cursor: pointer;
+}
