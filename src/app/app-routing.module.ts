@@ -84,6 +84,7 @@ const routes: Routes = [
     {path:"about-company",component:AboutCompanyComponent},
     // {path:"payments",import payments module},// Lazy component module Loading
     {path:"one-person-change"},
+    {path:"two-person-added"},
     // {path:"one-person-change"},
     {
       path: 'payments',
