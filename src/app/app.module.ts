@@ -47,6 +47,11 @@ import { Calculator2Component } from './calculator2/calculator2.component';
 import { OperationsComponent } from './operations/operations.component';
 import { RatingComponent } from './rating/rating.component';
 import { AboutUsModule } from './about-us/about-us.module';
+import { SiblingCommunicationComponent } from './sibling-communication/sibling-communication.component';
+import { SiblingItemsComponent } from './sibling-items/sibling-items.component';
+import { SiblingNavigationComponent } from './sibling-navigation/sibling-navigation.component';
+import { SiblingCartComponent } from './sibling-cart/sibling-cart.component';
+import { SiblingDiscountComponent } from './sibling-discount/sibling-discount.component';
 
 
 
@@ -95,6 +100,11 @@ import { AboutUsModule } from './about-us/about-us.module';
     Calculator2Component,
     OperationsComponent,
     RatingComponent,
+    SiblingCommunicationComponent,
+    SiblingItemsComponent,
+    SiblingNavigationComponent,
+    SiblingCartComponent,
+    SiblingDiscountComponent,
   
   
    
