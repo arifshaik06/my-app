@@ -83,7 +83,7 @@ const routes: Routes = [
     {path:"rating",component:RatingComponent},
     {path:"about-company",component:AboutCompanyComponent},
     // {path:"payments",import payments module},// Lazy component module Loading
-    // {path:"one-person-change"},
+    {path:"two-person-change"}
     {
       path: 'payments',
       loadChildren: () => import('./payments/payments.module').then(m => m.PaymentsModule)
