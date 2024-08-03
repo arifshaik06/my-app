@@ -48,7 +48,7 @@ const routes: Routes = [
     {path:"welcome", component:WelcomeComponent},
     {path:"home",component:HomeComponent},
     {path:"data-binding",component:DataBindingComponent},
-    {path:"calculator",component:CalculatorComponent},
+    {path:"calculator-one",component:CalculatorComponent},
     {path:"rectangle",component:RectangleComponent},
     {path:"circle",component:CircleComponent},
     {path:"bmi",component:BmiComponent},
@@ -82,6 +82,7 @@ const routes: Routes = [
     {path:"rating",component:RatingComponent},
     {path:"about-company",component:AboutCompanyComponent},
     // {path:"payments",import payments module},// Lazy component module Loading
+    {path:"one-person-change"},
     {
       path: 'payments',
       loadChildren: () => import('./payments/payments.module').then(m => m.PaymentsModule)
